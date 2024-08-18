@@ -17,8 +17,4 @@ Alice and Bob are in a team doing a project. After Alice completing a task, say 
 - **Details:** Pasta with marinara sauce
 
 ## Installation
-
-### Prerequisites
-- Python 3.7+
-- SQLite or another supported SQL database
-- Required Python packages (see `requirements.txt`)
+See 'requirement.txt'
