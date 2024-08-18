@@ -1,0 +1,10 @@
+PyYAML==6.0.2
+openai==1.40.3
+openai-whisper==20231117
+torch==2.4.0+cu124
+pyannote.audio==3.3.1
+pathlib==1.0.1
+pydub==0.25.1
+sounddevice==0.5.0
+numpy==1.26.4
+playsound==1.2.2
