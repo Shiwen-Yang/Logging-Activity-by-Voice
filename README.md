@@ -19,5 +19,5 @@ Alice and Bob are in a team doing a project. After Alice completing a task, say 
 ## Installation
 1. **Install Ollama.**
 2. **Use Ollama to install the `gemma2:2b-instruct-fp16` model (or some other model you love)**
-3. **Install Python dependencies from requirements.txt.**
+3. **Install Python dependencies from `requirements.txt`.**
 4. **Run main.py**
