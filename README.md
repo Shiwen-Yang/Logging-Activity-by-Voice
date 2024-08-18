@@ -1,4 +1,4 @@
-# Voice Database App
+# Log My Activities
 
 ## Overview
 This App is a cute little tool facilitating data entries in a SQL database. It mainly aims to log activities of each member in a team. Using voice diarization, this app can identify users by their voice so that credit can be correctly assigned with as little effort in data entry as possible. It also has a user-friendly interface that enables users to choose a table, add data entries, view all entries, and undo changes if necessary.
