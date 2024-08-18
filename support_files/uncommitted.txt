@@ -1,0 +1,4 @@
+
+            INSERT INTO Activity (family_id, activity_type, activity_time, notes)
+            VALUES (?, ?, ?, ?)
+             -- (1, 'have dinner', datetime.datetime(2024, 8, 17, 23, 23, 13), 'pasta with marinara sauce')

@@ -1,0 +1,5 @@
+hf_token: "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"
+base_url: "http://localhost:11434/v1/"
+api_key: "I heart Ollama"
+model_name: "gemma2:2b-instruct-fp16"
+database: "Team.db"
