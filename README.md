@@ -10,9 +10,11 @@ This App is a cute little tool facilitating data entries in a SQL database. It m
 - **User-Friendly Interface:** Provides an intuitive interface for interacting with the database.
 
 ## Example Usage
-Alice and Bob are in a team doing a project. After Alice completing a task, say it's "make pasta with marinara sauce for dinner", Alice can say, "I made pasta with marinara sauce for dinner." The app will:
-- Identify it's Alice who made dinner.
-- Log {"member": "Alice", "time": time of recording,"activity": make dinner, "details": "pasta with marinara sauce"} to the activity database
+Alice and Bob are in a team doing a project. After Alice completing a task, say it's "make pasta with marinara sauce for dinner", Alice can say, "I made pasta with marinara sauce for dinner." The app will identify it's Alice who made dinner, and enter the following to the database.
+- **Member:** Alice
+- **Time:** [Time of recording]
+- **Activity:** Make dinner
+- **Details:** Pasta with marinara sauce
 
 ## Installation
 
