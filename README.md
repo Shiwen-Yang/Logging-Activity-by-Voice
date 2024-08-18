@@ -17,4 +17,4 @@ Alice and Bob are in a team doing a project. After Alice completing a task, say 
 - **Details:** Pasta with marinara sauce
 
 ## Installation
-
+1. **Install Ollama.**
