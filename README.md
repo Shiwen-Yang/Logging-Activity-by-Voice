@@ -19,6 +19,6 @@ Alice and Bob are in a team doing a project. After Alice completes a task, say i
 ## Installation
 1. **Install Ollama.**
 2. **Use Ollama to install the `gemma2:2b-instruct-fp16` model (or some other model you love)**
-3. **The STT model, whisper, requires ffmpeg, which can be found at `https://www.ffmpeg.org`**
+3. **The STT model, whisper, requires ffmpeg, which can be found [here](https://www.ffmpeg.org)**
 4. **Install Python dependencies from `requirements.txt`.**
 5. **Run main.py**
