@@ -357,14 +357,14 @@ class DatabaseApp(tk.Tk):
             conn = sqlite3.connect(self.database)  # Replace 'your_database.db' with your actual database file path
             cursor = conn.cursor()
 
-            # Look up family_id using speaker's name
-            cursor.execute("SELECT family_id FROM Family WHERE first_name = ?", (dic["speaker"],))
-            family_id = cursor.fetchone()
+            # Look up member_id using speaker's name
+            cursor.execute("SELECT member_id FROM Team WHERE first_name = ?", (dic["speaker"],))
+            member_id = cursor.fetchone()
             
-            if family_id:
-                family_id = family_id[0]
+            if member_id:
+                member_id = member_id[0]
             else:
-                print(f"Family ID not found for speaker: {dic['speaker']}")
+                print(f"Team ID not found for speaker: {dic['speaker']}")
                 cursor.close()
                 conn.close()
                 return
@@ -377,10 +377,10 @@ class DatabaseApp(tk.Tk):
 
             # Prepare the SQL query
             sql_query = """
-            INSERT INTO Activity (family_id, activity_type, activity_time, notes)
+            INSERT INTO Activity (member_id, activity_type, activity_time, notes)
             VALUES (?, ?, ?, ?)
             """
-            sql_params = (family_id, activity_type, activity_time, notes)
+            sql_params = (member_id, activity_type, activity_time, notes)
 
             # Check if auto-commit is enabled
             if self.checkbox_var.get():  # Auto-commit is enabled
@@ -426,7 +426,7 @@ class DatabaseApp(tk.Tk):
             # Create a unique filename using the current timestamp
             filename = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + ".wav"
             filepath = os.path.join("recordings", filename)
-
+            os.makedirs(os.path.dirname(filepath), exist_ok=True)
             # Save the recording to the "recordings" folder
             with wave.open(filepath, 'wb') as wf:
                 wf.setnchannels(1)
